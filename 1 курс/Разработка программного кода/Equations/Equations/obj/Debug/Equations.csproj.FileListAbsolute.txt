@@ -1,0 +1,8 @@
+E:\Projects\Equations\Equations\bin\Debug\Equations.exe.config
+E:\Projects\Equations\Equations\bin\Debug\Equations.exe
+E:\Projects\Equations\Equations\bin\Debug\Equations.pdb
+E:\Projects\Equations\Equations\obj\Debug\Equations.csproj.AssemblyReference.cache
+E:\Projects\Equations\Equations\obj\Debug\Equations.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Equations\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
+E:\Projects\Equations\Equations\obj\Debug\Equations.exe
+E:\Projects\Equations\Equations\obj\Debug\Equations.pdb
