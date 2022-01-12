@@ -5,7 +5,17 @@
       "ProjectGuid": "b924c05a-d987-420f-9685-d0bb71c26e86",
       "DisplayName": "SalaryApp",
       "ColorIndex": 0
+    },
+    "776e8896-10c2-4092-8139-fc216e803cff": {
+      "ProjectGuid": "776e8896-10c2-4092-8139-fc216e803cff",
+      "DisplayName": "BL",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
