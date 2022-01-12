@@ -8,7 +8,7 @@ namespace BL
 {
     public class Engener : Employee
     {
-        private int constantlySalary = 25000;
+        private int constantlySalary = 30000;
         private int premium = 15000;
         private string availabilityOfAPremium;
 

@@ -44,6 +44,7 @@
             this.buttonManager = new System.Windows.Forms.Button();
             this.labelFullName = new System.Windows.Forms.Label();
             this.textBoxPremium = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxSurname
@@ -97,11 +98,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(380, 102);
+            this.label5.Location = new System.Drawing.Point(375, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 16);
+            this.label5.Size = new System.Drawing.Size(227, 16);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Количество сделок:";
+            this.label5.Text = "Количество совершённых сделок:";
             // 
             // label6
             // 
@@ -114,14 +115,14 @@
             // 
             // textBoxBusiness
             // 
-            this.textBoxBusiness.Location = new System.Drawing.Point(523, 99);
+            this.textBoxBusiness.Location = new System.Drawing.Point(616, 99);
             this.textBoxBusiness.Name = "textBoxBusiness";
             this.textBoxBusiness.Size = new System.Drawing.Size(48, 22);
             this.textBoxBusiness.TabIndex = 11;
             // 
             // textBoxHours
             // 
-            this.textBoxHours.Location = new System.Drawing.Point(305, 99);
+            this.textBoxHours.Location = new System.Drawing.Point(307, 99);
             this.textBoxHours.Name = "textBoxHours";
             this.textBoxHours.Size = new System.Drawing.Size(48, 22);
             this.textBoxHours.TabIndex = 10;
@@ -157,7 +158,7 @@
             // 
             // buttonManager
             // 
-            this.buttonManager.Location = new System.Drawing.Point(383, 129);
+            this.buttonManager.Location = new System.Drawing.Point(378, 129);
             this.buttonManager.Name = "buttonManager";
             this.buttonManager.Size = new System.Drawing.Size(104, 33);
             this.buttonManager.TabIndex = 20;
@@ -176,16 +177,26 @@
             // 
             // textBoxPremium
             // 
-            this.textBoxPremium.Location = new System.Drawing.Point(16, 99);
+            this.textBoxPremium.Location = new System.Drawing.Point(82, 99);
             this.textBoxPremium.Name = "textBoxPremium";
             this.textBoxPremium.Size = new System.Drawing.Size(48, 22);
             this.textBoxPremium.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Премия:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 174);
+            this.ClientSize = new System.Drawing.Size(694, 174);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxPremium);
             this.Controls.Add(this.labelFullName);
             this.Controls.Add(this.buttonManager);
@@ -227,6 +238,7 @@
         private System.Windows.Forms.Button buttonManager;
         private System.Windows.Forms.Label labelFullName;
         private System.Windows.Forms.TextBox textBoxPremium;
+        private System.Windows.Forms.Label label4;
     }
 }
 
