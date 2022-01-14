@@ -21,7 +21,7 @@ namespace SalaryApp
         private void buttonEngineer_Click(object sender, EventArgs e)
         {
             Employee employee = new Employee(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text);
-            labelFullName.Text = employee.FullNameOutput();
+            labelFullName.Text = employee.OutputFullName();
             Engener engener = new Engener(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text, textBoxPremium.Text);
             labelSalary.Text = $"{engener.PayrollToEngineer()} р.";
         }
@@ -29,7 +29,7 @@ namespace SalaryApp
         private void buttonWorker_Click(object sender, EventArgs e)
         {
             Employee employee = new Employee(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text);
-            labelFullName.Text = employee.FullNameOutput();
+            labelFullName.Text = employee.OutputFullName();
             Worker worker = new Worker(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text, Convert.ToDouble(textBoxHours.Text));
             labelSalary.Text = $"{worker.PayrollToWorker()} р.";
         }
@@ -37,7 +37,7 @@ namespace SalaryApp
         private void buttonManager_Click(object sender, EventArgs e)
         {
             Employee employee = new Employee(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text);
-            labelFullName.Text = employee.FullNameOutput();
+            labelFullName.Text = employee.OutputFullName();
             Manager manager = new Manager(textBoxSurname.Text, textBoxFirstName.Text, textBoxPatronymic.Text, Convert.ToInt32(textBoxBusiness.Text));
             labelSalary.Text = $"{manager.PayrollToManager()} р.";
         }

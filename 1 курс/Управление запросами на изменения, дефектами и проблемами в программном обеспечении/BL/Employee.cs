@@ -27,7 +27,7 @@ namespace BL
             this.patronymic = patronymic;
         }
         
-        public string FullNameOutput()
+        public string OutputFullName()
         {
             return surname + " " + firstName[0] + "." + patronymic[0] + ".";
         }

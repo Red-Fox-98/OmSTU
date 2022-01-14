@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryApp", "SalaryApp\Sala
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{776E8896-10C2-4092-8139-FC216E803CFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{64E6BAE6-CCFA-46A3-90D6-AFA037D67D8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{776E8896-10C2-4092-8139-FC216E803CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776E8896-10C2-4092-8139-FC216E803CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776E8896-10C2-4092-8139-FC216E803CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E6BAE6-CCFA-46A3-90D6-AFA037D67D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E6BAE6-CCFA-46A3-90D6-AFA037D67D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E6BAE6-CCFA-46A3-90D6-AFA037D67D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E6BAE6-CCFA-46A3-90D6-AFA037D67D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

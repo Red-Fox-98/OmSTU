@@ -16,12 +16,12 @@ namespace BL
 
         public Manager(string surname, string firstName, string patronymic, int valueOfSales) : base(surname, firstName, patronymic)
         {
-            this.valueOfSales = valueOfSales;
+            this.ValueOfSales = valueOfSales;
         }
 
         public double PayrollToManager()
         {
-            return constantlySalary + (valueOfSales * bonusPerTrade);
+            return constantlySalary + (ValueOfSales * bonusPerTrade);
         }
     }
 }
