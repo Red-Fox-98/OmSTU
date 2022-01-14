@@ -11,8 +11,8 @@ namespace UnitTests
         [TestMethod]
         public void PayrollToManagerTest()
         {
-            Manager manager = new Manager("Зайцева", "Евгения", "Артёмовна", 0);
-            NUnit.Framework.Assert.AreEqual(25000, manager.PayrollToManager());
+            Manager manager = new Manager("Зайцева", "Евгения", "Артёмовна", 5);
+            NUnit.Framework.Assert.AreEqual(32500, manager.PayrollToManager());
         }
     }
 }
