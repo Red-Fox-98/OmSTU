@@ -38,17 +38,7 @@ namespace Equations
             }
             //////////////////////////////////////////////////////////
             calculate_extremum(a, b, c);
-            if (a != 0)
-            {
-                if (a > 0)
-                {
-                    Console.Write("Убывает (" + -double.PositiveInfinity + "," + x + ") , " + "Возрастает (" + x + "," + double.PositiveInfinity + ")\n");
-                }
-                if (a < 0)
-                {
-                    Console.Write("Возрастает (" + -double.PositiveInfinity + "," + x + ") , " + "Убывает (" + x + "," + double.PositiveInfinity + ")\n");
-                }
-            }
+            //////////////////////////////////////////////////////////
             Console.WriteLine("/////////////////////////////////////////////////////////////////////////");
             Random random = new Random();
             for (int i = 0; i < 10; i++)
@@ -58,7 +48,6 @@ namespace Equations
                 c = random.Next(-2, 2);
                 calculate_roots(a, b, c);
             }
-
             Console.Write("Максимальное число = " + listRoots.Max());
             Console.Write("\nМинимальное число = " + listRoots.Min() + "\n");
         }
@@ -89,6 +78,21 @@ namespace Equations
         {
             x = (-b) / (2 * a);
             y = a * Math.Pow(x, 2) + (b * x) + c;
+            if (a != 0)
+            {
+                if (a > 0)
+                {
+                    Console.Write("Убывает (" + -double.PositiveInfinity + "," + x + ") , " + "Возрастает (" + x + "," + double.PositiveInfinity + ")\n");
+                }
+                if (a < 0)
+                {
+                    Console.Write("Возрастает (" + -double.PositiveInfinity + "," + x + ") , " + "Убывает (" + x + "," + double.PositiveInfinity + ")\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error");
+            }
         }
     }
 }

@@ -5,7 +5,12 @@
       "ProjectGuid": "0a779f87-7568-4913-8278-793829fd8949",
       "DisplayName": "OOPBar",
       "ColorIndex": 0
+    },
+    "aecdd080-f4b7-4f05-8f0f-21ef712c57d1": {
+      "ProjectGuid": "aecdd080-f4b7-4f05-8f0f-21ef712c57d1",
+      "DisplayName": "OOPBarLibrary",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

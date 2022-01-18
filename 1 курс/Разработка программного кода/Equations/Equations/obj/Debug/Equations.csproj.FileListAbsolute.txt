@@ -6,3 +6,11 @@ E:\Projects\Equations\Equations\obj\Debug\Equations.csproj.SuggestedBindingRedir
 E:\Projects\Equations\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
 E:\Projects\Equations\Equations\obj\Debug\Equations.exe
 E:\Projects\Equations\Equations\obj\Debug\Equations.pdb
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\bin\Debug\Equations.exe.config
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\bin\Debug\Equations.exe
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\bin\Debug\Equations.pdb
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\obj\Debug\Equations.csproj.AssemblyReference.cache
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\obj\Debug\Equations.csproj.SuggestedBindingRedirects.cache
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\obj\Debug\Equations.exe
+E:\Github\OmSTU\1 курс\Разработка программного кода\Equations\Equations\obj\Debug\Equations.pdb
