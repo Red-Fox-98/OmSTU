@@ -20,9 +20,8 @@ namespace OOPBar
             this.volume = volume;
         }
 
-        public double CostCalculationnAlcoholicDrinks()
+        public double CostCalculationnAlcoholicDrinks(double result = 0)
         {
-            double result = 0;
             if (drinkIndex == 0)
             {
                 Drinks.Wine wine = new Drinks.Wine(drinkIndex, volume);

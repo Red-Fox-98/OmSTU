@@ -10,31 +10,38 @@ using System.Windows.Forms;
 
 namespace OOPBar
 {
-    public partial class Form1 : Form
+    public partial class DrinksPricesCalculationForm : Form
     {
-        public Form1()
+        
+
+        public List<string> orderSheet;
+        public List<string> drinkSheet;
+
+        public DrinksPricesCalculationForm()
         {
             InitializeComponent();
+            orderSheet = new List<string>();
+            drinkSheet = new List<string>();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void CalculateActionButton_Click(object sender, EventArgs e)
         {
-            List<string> orderSheet = new List<string>();
-            List<string> drinkSheet = new List<string>();
+            orderSheet.Clear();
             double orderCost = 0;
-            int counter = 0;
+            int counterSheet = 0;
             //////////////////////////////////////////////////////////////////////////////////////////////
-            foreach (string drink in comboBoxDrinks.Items)
+            foreach (string drink in checkedListBoxDrinks.Items)
             {
                 drinkSheet.Add(drink);
             }
             foreach (string i in checkedListBoxIngredients.CheckedItems)
             {
+
                 orderSheet.Add(i);
-                if (orderSheet[counter] != null)
+                if (orderSheet[counterSheet] != null)
                 {
                     orderCost += 5;
-                    counter++;
+                    counterSheet++;
                 }
             }
             //////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,26 +49,6 @@ namespace OOPBar
             foreach (string s in checkedListBoxDrinks.CheckedItems)
             {
                 orderSheet.Add(s);
-            }
-            //////////////////////////////////////////////////////////////////////////////////////////////
-            for (int i = 0; i < comboBoxDrinks.Items.Count; i++)
-            {
-                if (i == 0 || i == 1 || i == 2 || i == 3)
-                {
-                    AlcoholicDrinks alcoholicDrink = new AlcoholicDrinks(i, Convert.ToDouble(textBoxValue.Text));
-                    if (comboBoxDrinks.SelectedIndex == i)
-                    {
-                        orderCost += alcoholicDrink.CostCalculationnAlcoholicDrinks();
-                    }
-                }
-                if (i == 4 || i == 5 || i == 6)
-                {
-                    SoftDrinks softDrink = new SoftDrinks(i, Convert.ToDouble(textBoxValue.Text));
-                    if (comboBoxDrinks.SelectedIndex == i)
-                    {
-                        orderCost += softDrink.CostCalculationnSoftDrinks();
-                    }
-                }
             }
             //////////////////////////////////////////////////////////////////////////////////////////////
             for (int i = 0; i < orderSheet.Count; i++)

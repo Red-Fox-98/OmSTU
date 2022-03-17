@@ -20,9 +20,8 @@ namespace OOPBar
             this.volume = volume;
         }
 
-        public double CostCalculationnSoftDrinks()
+        public double CostCalculationnSoftDrinks(double result = 0)
         {
-            double result = 0;
             if (drinkIndex == 4)
             {
                 Drinks.Juice juice = new Drinks.Juice(drinkIndex, volume);

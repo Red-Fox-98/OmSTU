@@ -3,9 +3,9 @@ E:\Github\OmSTU\1 курс\Разработка программного код�
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\bin\Debug\OOPBar.pdb
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.csproj.AssemblyReference.cache
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.csproj.SuggestedBindingRedirects.cache
-E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.Form1.resources
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.Properties.Resources.resources
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.csproj.GenerateResource.cache
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.csproj.CoreCompileInputs.cache
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.exe
 E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.pdb
+E:\Github\OmSTU\1 курс\Разработка программного кода\OOPBar\OOPBar\obj\Debug\OOPBar.DrinksPricesCalculationForm.resources
