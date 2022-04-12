@@ -11,8 +11,16 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            Personage personage = new Personage(true);
-            Console.ReadLine();
+            Console.SetWindowSize(190, 40);
+            Console.SetBufferSize(190, 40);
+            
+            Game game = new Game();
+            game.Start();
+
+            while (true)
+            {
+                game.Update();
+            }
         }
     }
 }
