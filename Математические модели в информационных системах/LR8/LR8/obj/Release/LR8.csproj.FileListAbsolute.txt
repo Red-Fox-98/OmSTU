@@ -1,0 +1,16 @@
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\LR8.exe.config
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\LR8.exe
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\LR8.pdb
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\MathNet.Numerics.dll
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\System.ValueTuple.dll
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\MathNet.Numerics.xml
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\bin\Release\System.ValueTuple.xml
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.csproj.AssemblyReference.cache
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.csproj.SuggestedBindingRedirects.cache
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.LR8.resources
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.Properties.Resources.resources
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.csproj.GenerateResource.cache
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.csproj.CoreCompileInputs.cache
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.csproj.CopyComplete
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.exe
+E:\ОмГТУ\Математические модели в информационных системах\LR8\LR8\obj\Release\LR8.pdb
