@@ -8,23 +8,26 @@ namespace Game
 {
     public class Avatar
     {
-        public string[,] avatar;
+        public char[,] avatar;
+        public Buffer buffer;
 
-        public Avatar(string[,] avatar) 
+        public Avatar(char[,] avatar, Buffer buffer) 
         {
             this.avatar = avatar;
+            this.buffer = buffer;
         }
 
         public void Draw(int x, int y)
         {
-            for (int i = 0; i < this.avatar.GetLength(0); i++)
-            {
-                for (int j = 0; j < this.avatar.GetLength(1); j++)
-                {
-                    Console.SetCursorPosition(x + i, y + j);
-                    Console.Write(this.avatar[i, j]);
-                }
-            }
+            buffer.Push(avatar, x, y);
+            //for (int i = 0; i < avatar.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < avatar.GetLength(1); j++)
+            //    {
+            //        Console.SetCursorPosition(x + j, y + i);
+            //        Console.Write(avatar[i, j]);
+            //    }
+            //}
         }
     }
 }

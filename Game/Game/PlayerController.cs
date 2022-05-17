@@ -22,14 +22,13 @@ namespace Game
             }
             else
             {
+                Console.Clear();
                 if (keys[0].Key == ConsoleKey.RightArrow)
                 {
-                    Console.Clear();
                     moveToRight();
                 }
                 if (keys[0].Key == ConsoleKey.LeftArrow)
                 {
-                    Console.Clear();
                     moveToLeft();
                 }
             }
