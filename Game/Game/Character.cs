@@ -8,24 +8,33 @@ namespace Game
 {
     public class Character
     {
-        public Avatar avatar;
-        public Vector v;
+        Transform transform;
+        Collider collider;
+        Avatar avatar;
+        Body body;
 
-        public Character(int x, int y, Avatar avatar)
+        public Character(int x, int y, Avatar avatar, List<Collider> colliders)
         {
-            v = new Vector(x, y);
+            transform = new Transform(x, y);
             this.avatar = avatar;
+            this.body = new Body(transform, new Vector(0, 0), 5);
+            collider = new Collider(transform, colliders, 1.5f);
         }
 
         public void Move(int x_, int y_)
         {
-            v.x += x_;
-            v.y += y_;
+            body.AddVelocity(new Vector(x_, y_));
         }
 
         public void Update()
         {
-            avatar.Draw(v.x, v.y);
+            if (collider.CollisionCheck())
+            {
+                transform.position.x = 0;
+                transform.position.y = 0;
+            }
+            body.Update();
+            avatar.Draw((int)transform.position.x, (int)transform.position.y);
         }
     }
 }

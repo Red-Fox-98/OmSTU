@@ -12,8 +12,8 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            Console.SetWindowSize(150, 45);
-            Console.SetBufferSize(150, 45);
+            Console.SetWindowSize(121, 41);
+            Console.SetBufferSize(121, 41);
 
             Game game = new Game();
             game.Start();

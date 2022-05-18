@@ -12,6 +12,8 @@ namespace Game
         public Character player;
         public Buffer buffer;
         public Map map;
+        public List<Collider> collidersList;
+        public Floor floor;
 
         public Game()
         {
@@ -20,24 +22,32 @@ namespace Game
 
         public void Start()
         {
+            collidersList = new List<Collider>();
+            
             char[,] playerPicture =
             {
                 {' ', '*', ' ' },
                 {'-', '#', '-' },
-                {'#', ' ', '#' }
-                //{"#", "#", "#" },
-                //{"*", "*", "*" },
-                //{" ", "*", " " },
-                //{"*", "#", "*" },
-                //{" ", "#", " " },
-                //{"#", " ", "#" }
+                {'/', ' ', '\\' }
             };
 
+            char[,] floorPicture =
+            {
+                {'=', '=', '=' },
+                {'=', '=', '=' },
+                {'=', '=', '=' }
+            };
+
+            
             buffer = new Buffer(40, 120, '!');
-            Avatar avatar = new Avatar(playerPicture, buffer);
-            //this.map = new Map();
-            this.player = new Character(0, 0, avatar);
+            Avatar playerAvatar = new Avatar(playerPicture, buffer);
+            this.player = new Character(0, 0, playerAvatar, collidersList);
             this.playerController = new PlayerController(player);
+
+            Avatar floorAvatar = new Avatar(floorPicture, buffer);
+            this.floor = new Floor(0, 25, floorAvatar, collidersList);
+
+
         }
 
         public void Update()
@@ -51,11 +61,13 @@ namespace Game
             }
 
             playerController.Update(keys);
+            floor.Update();
             this.player.Update();
 
             buffer.Draw();
-            Thread.Sleep(100);
+            Thread.Sleep(25);
             //map.DrawMap();
         }
+
     }
 }

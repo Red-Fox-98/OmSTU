@@ -8,10 +8,10 @@ namespace Game
 {
     public class Buffer
     {
-        public int height;
-        public int width;
-        public char[,] buffer;
-        public char foregroundSymbol;
+        int height;
+        int width;
+        char[,] buffer;
+        char foregroundSymbol;
 
         public Buffer(int height, int width, char foregroundSymbol = ' ')
         {
@@ -45,7 +45,10 @@ namespace Game
             {
                 for (int i = 0; i < image.GetLength(1); i++)
                 {
-                    buffer[y + j, x + i] = image[j, i];
+                    if (x + i < width && y + j < height && x + i >= 0 && y + j >= 0)
+                    {
+                        buffer[y + j, x + i] = image[j, i];
+                    }
                 }
             }
         }
