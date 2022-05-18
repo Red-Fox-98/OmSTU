@@ -33,15 +33,14 @@ namespace Game
 
             char[,] floorPicture =
             {
-                {'=', '=', '=' },
-                {'=', '=', '=' },
-                {'=', '=', '=' }
+                {'=', '=', '='},
+                {'=', '=', '='}
             };
 
             
-            buffer = new Buffer(40, 120, '!');
+            buffer = new Buffer(40, 120, ' ');
             Avatar playerAvatar = new Avatar(playerPicture, buffer);
-            this.player = new Character(0, 0, playerAvatar, collidersList);
+            this.player = new Character(1, 0, playerAvatar, collidersList);
             this.playerController = new PlayerController(player);
 
             Avatar floorAvatar = new Avatar(floorPicture, buffer);

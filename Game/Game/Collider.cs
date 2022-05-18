@@ -10,11 +10,13 @@ namespace Game
     {
         Transform transform;
         List<Collider> colliders;
-        float radius;
+        Vector topLeftCorner;
+        Vector bottomRightCorner;
 
-        public Collider(Transform transform, List<Collider> colliders, float radius)
+        public Collider(Vector topLeftCorner, Vector bottomRightCorner, Transform transform, List<Collider> colliders)
         {
-            this.radius = radius;
+            this.topLeftCorner = topLeftCorner;
+            this.bottomRightCorner = bottomRightCorner;
             this.colliders = colliders;
             this.transform = transform;
             colliders.Add(this);
@@ -28,15 +30,24 @@ namespace Game
                 {
                     continue;
                 }
-                float distance =
-                        MathF.Sqrt(
-                        (float)Math.Pow((double)collider.transform.position.x - (double)transform.position.x, 2.0) +
-                        (float)Math.Pow((double)collider.transform.position.y - (double)transform.position.y, 2.0)
-                    );
-                if (distance > collider.radius + radius)
+
+                if (bottomRightCorner.y + transform.position.y < collider.topLeftCorner.y + collider.transform.position.y ||
+                    collider.bottomRightCorner.y + collider.transform.position.y < topLeftCorner.y + transform.position.y
+                )
                 {
                     continue;
                 }
+
+
+                if (bottomRightCorner.x + transform.position.x < collider.topLeftCorner.x + collider.transform.position.x ||
+                    collider.bottomRightCorner.x + collider.transform.position.x < topLeftCorner.x + transform.position.x
+                )
+                {
+                    continue;
+                }
+
+
+
                 return true;
             }
             return false;

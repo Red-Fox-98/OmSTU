@@ -15,7 +15,7 @@ namespace Game
         {
             transform = new Transform(x, y);
             this.image = image;
-            collider = new Collider(transform, colliders, 1.5f);
+            collider = new Collider(new Vector(0, 0), new Vector(3, 2), transform, colliders);
         }
 
         public void Update()

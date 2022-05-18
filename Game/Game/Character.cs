@@ -18,7 +18,7 @@ namespace Game
             transform = new Transform(x, y);
             this.avatar = avatar;
             this.body = new Body(transform, new Vector(0, 0), 5);
-            collider = new Collider(transform, colliders, 1.5f);
+            collider = new Collider(new Vector(0, 0), new Vector(3, 3), transform, colliders);
         }
 
         public void Move(int x_, int y_)
@@ -30,6 +30,7 @@ namespace Game
         {
             if (collider.CollisionCheck())
             {
+                body.SetVelocity(new Vector(0, 0));
                 transform.position.x = 0;
                 transform.position.y = 0;
             }

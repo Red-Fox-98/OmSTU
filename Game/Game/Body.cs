@@ -24,6 +24,11 @@ namespace Game
             this.velocity += vector / mass;
         }
 
+        public void SetVelocity(Vector vector)
+        {
+            this.velocity = vector;
+        }
+
         public void Update()
         {
             AddVelocity(new Vector(0, 0.01f) * mass);
